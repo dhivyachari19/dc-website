@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Programs | Dhivya Chari</title>
+    <link rel="icon" type="image/png" href="home/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="py-2">
+        <!-- Responsive navbar-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Dhivya Chari</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Programs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="text-center my-4">
+            <h1 class="text-white fs-1 fw-bolder">Programs</h1>
+        </div>
+    
+    </header>
+    
+    <div class="text-center text-white p-3 mx-5">
+        <p class="mx-3">Here you can find my recently completed coding projects and sample outputs/deployments. 
+            These projects cover a variety of topics, ranging from cryptography to machine learning.
+            To view the project repository on GitHub, click on the project title.
+        </p>
+    </div>
+
+    <!-- Virus Shield -->
+    <div class="row p-3">
+        <div class="col-sm-6">
+            <div id="virusShield" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#virusShield" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#virusShield" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="virus_shield/site.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Virus Shield UI: webpage where user uploads file, and a classification is returned.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="virus_shield/processed.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Sample image produced by preprocessor where each pixel represents a value in a 32x32 matrix.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#virusShield"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#virusShield"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-sm-6 text-white">
+            <h3 class="mx-2"><u><a href="https://github.com/dhivyachari19/virus-shield" style="color: inherit;">virus-shield</a></u></h3>
+            <p class="mx-2"><strong>Languages, Frameworks, & Libraries Used:</strong> HTML, CSS, Javascript, Python, Tensorflow, 
+                matplotlib, numpy, pandas, Postman (testing)</p>
+            <p class="mx-2"><strong>Co-Authors:</strong> Aayush Desai, Abhived Pulapaka, Ally Smith</p>
+            <p class="mx-2">Virus Shield is a full-stack application which enables users to upload a file that they would like to test for any 
+                evidence of malware. The file is initially interpreted by a preprocessor, which converts the file into a 32x32 pixel image.
+                The program then uses a trained SVM (support vector machine) and CNN (convolutional neural network) to provide one of 25
+                possible malware classifications. Virus Shield uses a Flask server to handle requests and properly store and retrieve data.
+            </p>
+        </div>
+    </div>
+
+    <!-- Caesar Cipher Decoder -->
+    <div class="row p-3">
+        <div class="col-sm-6">
+            <div id="caesarCipher" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#caesarCipher" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#caesarCipher" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#caesarCipher" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="caesar_cipher/before_after.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>A sample encrypted phrase and the program's outputted decryption.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="caesar_cipher/expected.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>The expected frequencies of letters in the English alphabet, which is used in the frequency analysis portion of
+                                the program, as well as in determining the algorithm's sequencing of predicted shifts.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="caesar_cipher/observed_freq_on_guess.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>The distribution of observed letter frequencies in the predicted decrypted string.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#caesarCipher"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#caesarCipher"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-sm-6 text-white">
+            <h3 class="mx-2"><u><a href="https://github.com/dhivyachari19/caesar-cipher-decoder" style="color: inherit;">caesar-cipher-decoder</a></u></h3>
+            <p class="mx-2"><strong>Languages, Frameworks, & Libraries Used:</strong> Python, R, numpy, matplotlib, ggplot2</p>
+            <p class="mx-2">This program implements a decryption algorithm for the Caesar cipher, a simple substitution cipher
+                in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. There are up to
+                26 possible shifts that the algorithm will generate, in order of confidence in accuracy. The program then
+                uses a frequency analysis approach based on the chi-squared test to determine the likelihood that the decrypted message is in fact the
+                original plaintext. The program also includes visualizations of the observed letter frequencies in the decrypted message
+                compared to the expected letter frequencies in the English alphabet given a certain number of characters, so the user can directly
+                assess whether the distributions share a significant degree of correspondence.
+            </p>
+        </div>
+    </div>
+
+    <!-- Fincharts Discord Bot -->
+    <div class="row p-3">
+        <div class="col-sm-6">
+            <div id="finCharts" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#finCharts" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#finCharts" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#finCharts" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="fincharts/candlestick.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>A candlestick chart of Netflix's stock in the month of June 2023.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="fincharts/compound.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>The compounded return of a year long investment in Apple's security.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="fincharts/macd.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>The MACD and signal line plots of Meta's stock.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#finCharts" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#finCharts" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-sm-6 text-white">
+            <h3 class="mx-2"><u><a href="https://github.com/dhivyachari19/fincharts-discord-bot"
+                        style="color: inherit;">fincharts-discord-bot</a></u></h3>
+            <p class="mx-2"><strong>Languages, Frameworks, & Libraries Used:</strong> Python, yfinance, pandas, matplotlib, discord.py
+            </p>
+            <p class="mx-2">This Discord bot, which generates financial charts, is driven by command line arguments that are sent as a message in a Discord server. 
+                When a valid command is sent, the bot then uses the yfinance library to retrieve stock data for the specified ticker. Based on the specific command 
+                submitted, the bot uses matplotlib to generate one of the following plots: a candlestick chart, a MACD and signal line plot, or a 
+                compounded return plot. The bot then sends the plot as a message in the respective Discord server.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
