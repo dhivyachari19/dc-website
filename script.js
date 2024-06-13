@@ -1,7 +1,3 @@
-window.onload = function() {
-    setupNavigationBar();
-};
-
 window.onscroll = function() {
     const nav = document.querySelector('.navbar');
     if(this.scrollY <= 75) {
@@ -27,16 +23,3 @@ function detectMob() {
     });
 }
 
-function setupNavigationBar() {
-    const isMobile = detectMob();
-    const mobileNav = document.querySelector('.pos-f-t');
-    const desktopNav = document.querySelector('.navbar');
-
-    if (isMobile) {
-        desktopNav.style.display = 'none'; 
-        mobileNav.style.display = 'block'; 
-    } else {
-        desktopNav.style.display = 'block';
-        mobileNav.style.display = 'none'; 
-    }
-}
